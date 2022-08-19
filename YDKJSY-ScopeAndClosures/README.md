@@ -105,4 +105,12 @@ When variables used by one part of the program are exposed to another part of th
 - Unexpected behavior
 - Unintended dependency
 
+### Hidding in Plain (Function) Scope
+let/const (block scoped declarators) keywords help hide our variable and function declarations.
 
+**Memoization** Caching a function's computed output to optimize performance when repeated calls of the same inputs are expected. Commonly used in Functional Programming
+
+IIFE - Immediately Invoked Function Expression
+Are useful when we want to create a scope to hide variable/functions. Since its an expression, it can be used in any placein a JS program where an experssion is allowed. An IIFE can be named or can be anonymous.
+
+### Function Boundaries

@@ -316,7 +316,7 @@ const dayEnd = "17:30"
 function scheduleMeeting (meetingTime, meetingDuration) {
     workStart = Number(dayStart.substring(0,2)) + (Number(dayStart.substring(3))/60)
     workEnd = Number(dayEnd.substring(0,2)) + (Number(dayEnd.substring(3))/60)
-    
+
     meeting = Number(meetingTime.substring(0,2)) + (Number(meetingTime.substring(3))/60)
     meetingBlock = meetingDuration / 60
 
@@ -326,7 +326,7 @@ function scheduleMeeting (meetingTime, meetingDuration) {
     if (meeting + meetingBlock > workEnd) {
         return false
     }
-    else { 
+    else {
         return true
     }
 }
@@ -339,4 +339,3 @@ console.log(scheduleMeeting("17:00",45))     // true
 console.log(scheduleMeeting("17:30",30))     // false
 console.log(scheduleMeeting("18:00",15))     // false
 ````
-
